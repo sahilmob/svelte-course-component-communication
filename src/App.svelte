@@ -1,8 +1,15 @@
 <script>
   import Product from "./Product.svelte";
+
+  function addToCart(event) {
+    console.log(event.detail);
+  }
+  function deleteProduct(event) {
+    console.log(event.detail);
+  }
 </script>
 
 <Product
   productTitle="A book"
-  on:add-to-cart={$event => console.log($event)}
-  on:delete={() => console.log('delete')} />
+  on:add-to-cart={addToCart}
+  on:delete={deleteProduct} />
