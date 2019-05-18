@@ -1,5 +1,5 @@
 <script>
-  export let name;
+  import Product from "./Product.svelte";
 </script>
 
-<h1>Hello {name}!</h1>
+<Product productTitle="A book" on:click={() => console.log('clicked')} />
