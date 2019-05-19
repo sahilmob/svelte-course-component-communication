@@ -16,6 +16,7 @@
   <Product {...product} on:add-to-cart={addToCart} on:delete={deleteProduct} />
 {/each}
 <Modal>
-  <h1>Hello!</h1>
+  <h1 slot="header">Hello!</h1>
   <p>This really works</p>
+  <button slot="footer">Confirm</button>
 </Modal>
